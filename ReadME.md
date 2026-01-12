@@ -527,8 +527,6 @@ print(f"Max Drawdown: {metrics['max_drawdown_pct']:.2f}%")
 print(f"Sharpe Ratio: {metrics['sharpe_ratio']:.2f}")
 ```
 
----
-
 
 ---
 
@@ -574,7 +572,7 @@ This project builds on concepts from:
 ---
 
 ##  License
-
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
