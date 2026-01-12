@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Key Features](#key-features)
@@ -16,12 +16,11 @@
 - [Usage Guide](#usage-guide)
 - [Configuration](#configuration)
 - [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ---
 
-## 🎯 Overview
+##  Overview
 
 This project represents the culmination of a four-week quantitative trading system development, focusing on intelligent market regime detection and adaptive risk management. The system achieved a **69% reduction in risk** (maximum drawdown) and **80% reduction in losses** compared to previous iterations.
 
@@ -38,9 +37,9 @@ Built a trading system that **knows when NOT to trade**, blocking 89.4% of signa
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-### 🎯 Five-Layer Decision Architecture
+###  Five-Layer Decision Architecture
 
 1. **Regime Detection**: Classifies market into 7 distinct regimes (STRONG_TREND_UP/DOWN, TREND_UP/DOWN, RANGE, VOLATILE, TRANSITIONAL)
 2. **Meta-Strategy Rules**: Enforces cooldowns after losses, blocks trades during extreme volatility
@@ -48,20 +47,20 @@ Built a trading system that **knows when NOT to trade**, blocking 89.4% of signa
 4. **Regime Filter**: Validates signals against current market conditions
 5. **Risk Management**: Dynamic position sizing and stop-loss mechanisms
 
-### 📊 Three Trading Modes
+###  Three Trading Modes
 
 - **CONSERVATIVE**: 70% confidence threshold, strict RSI levels (30/70), minimal risk
 - **BALANCED**: 60% confidence threshold, moderate RSI levels (32/68), balanced approach
 - **AGGRESSIVE**: 50% confidence threshold, relaxed RSI levels (35/65), maximum participation
 
-### 🖥️ Interactive Dashboard
+###  Interactive Dashboard
 
 - Real-time market monitoring with live regime detection
 - Comprehensive backtest result visualization
 - Multi-strategy performance comparison
 - Regime analysis and signal distribution charts
 
-### 🤖 AI Provider Flexibility
+###  AI Provider Flexibility
 
 - Supports multiple LLM providers (DeepSeek, ChatGPT, Claude)
 - Cost-effective implementation with DeepSeek (95% performance at 5% cost)
@@ -69,7 +68,7 @@ Built a trading system that **knows when NOT to trade**, blocking 89.4% of signa
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Week4_Project/
@@ -84,7 +83,7 @@ Week4_Project/
 │
 ├── Jupyter Notebooks
 │   ├── 04_week4_testing.ipynb              # Main analysis notebook
-│   └── [Previous week notebooks]
+│   
 │
 ├── Dashboard
 │   └── dashboard.py                        # Streamlit interactive dashboard
@@ -109,13 +108,13 @@ Week4_Project/
 │
 ├── Configuration
     ├── .env                                # API keys (not in git)
-    └── requirements.txt                    # Python dependencies
+                     
 
 ```
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -124,50 +123,8 @@ Week4_Project/
 - Jupyter Notebook
 - API Key from DeepSeek (or other LLM provider)
 
-### Step 1: Clone Repository
 
-```bash
-git clone <repository-url>
-cd Week4_Project
-```
-
-### Step 2: Create Environment
-
-**Using Conda (Recommended):**
-```bash
-conda create -n quant python=3.10
-conda activate quant
-```
-
-**Using venv:**
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-### Step 3: Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-**Required packages:**
-```
-pandas>=2.0.0
-numpy>=1.24.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-jupyter>=1.0.0
-python-dotenv>=1.0.0
-requests>=2.31.0
-ccxt>=4.0.0
-streamlit>=1.28.0
-plotly>=5.17.0
-python-docx>=1.1.0
-openpyxl>=3.1.0
-```
-
-### Step 4: Configure API Keys
+### Configure API Keys
 
 Create a `.env` file in the project root:
 
@@ -187,10 +144,9 @@ ANTHROPIC_API_KEY=your_claude_key_here
 
 ---
 
-## ⚡ Quick Start
+##  Quick Start
 
-### Option 1: Run Complete Analysis (Recommended)
-
+### Option 1: Run Complete Analysis 
 ```bash
 # Activate environment
 conda activate quant
@@ -297,7 +253,7 @@ engine.print_results(results)
 │     Executes: Trade with risk controls  │
 └──────────────┬──────────────────────────┘
                ↓
-         🎯 TRADE EXECUTION
+          TRADE EXECUTION
 ```
 
 ### Regime Classification System
@@ -325,7 +281,7 @@ engine.print_results(results)
 
 ---
 
-## 📊 Results Summary
+##  Results Summary
 
 ### Week 3 vs Week 4 Performance
 
@@ -356,7 +312,7 @@ engine.print_results(results)
 
 ---
 
-## 📖 Usage Guide
+##  Usage Guide
 
 ### Running Backtests
 
@@ -491,7 +447,7 @@ print(f"Reasoning: {signal['reasoning']}")
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -543,37 +499,7 @@ class MarketRegimeDetector:
 
 ---
 
-## 🧪 Testing
-
-### Run All Tests
-
-```bash
-# In Jupyter notebook
-# Cell -> Run All
-
-# Or use pytest if you have test files
-pytest tests/
-```
-
-### Validate Installation
-
-```python
-# test_installation.py
-import pandas as pd
-import ccxt
-from market_regime import MarketRegimeDetector
-from improved_llm_strategy_adjustable import ImprovedLLMStrategy
-from week4_backtest_engine import Week4BacktestEngine
-
-print("✅ All imports successful!")
-print(f"✅ Pandas version: {pd.__version__}")
-print(f"✅ CCXT version: {ccxt.__version__}")
-print("✅ Installation verified!")
-```
-
----
-
-## 📈 Performance Metrics
+##  Performance Metrics
 
 ### Metrics Calculated
 
@@ -598,75 +524,14 @@ print(f"Sharpe Ratio: {metrics['sharpe_ratio']:.2f}")
 
 ---
 
-## 🐛 Troubleshooting
-
-### Common Issues
-
-#### 1. API Key Not Found
-
-**Error:** `DeepSeek API key not found in .env file`
-
-**Solution:**
-```bash
-# Create .env file in project root
-echo "DEEPSEEK_API_KEY=your_key_here" > .env
-
-# Verify
-cat .env
-```
-
-#### 2. Module Import Errors
-
-**Error:** `ModuleNotFoundError: No module named 'xxx'`
-
-**Solution:**
-```bash
-pip install -r requirements.txt --upgrade
-```
-
-#### 3. Dashboard Not Loading Results
-
-**Error:** `Backtest results not found!`
-
-**Solution:**
-```bash
-# Run the Jupyter notebook first
-jupyter notebook 04_week4_testing.ipynb
-
-# Run Part 7: Save Results cell
-# Then restart dashboard
-streamlit run dashboard.py
-```
-
-#### 4. CCXT Exchange Errors
-
-**Error:** `ccxt.NetworkError` or `ccxt.ExchangeError`
-
-**Solution:**
-```python
-# Check internet connection
-# Or use cached data
-df = pd.read_csv('data/btc_usdt_1h.csv')
-```
-
-#### 5. Low Confidence / 0% Confidence
-
-**Question:** "Why is regime confidence 0%?"
-
-**Answer:** This is normal for TRANSITIONAL regime - it means the market direction is unclear and the system is correctly avoiding trades. See dashboard section above.
 
 ---
 
-## 📚 Documentation
+##  Documentation
 
 ### Available Documents
 
-- **📄 Week4_Analysis_Report.docx** - Comprehensive 15-page analysis report
-- **🎤 presentation_script_20min.md** - 20-minute presentation script with timing
-- **🖥️ dashboard_demo_script.md** - Dashboard demonstration guide (3 versions)
-- **🤖 AI_Provider_Impact_Analysis.md** - Comparison of different LLM providers
-- **📊 trading_modes_paragraph.md** - Detailed explanation of trading modes
-- **📈 Week4_Results_Analysis.md** - Deep dive into convergence findings
+- ** Week4_Analysis_Report.docx** - Comprehensive 15-page analysis report
 
 ### Academic References
 
@@ -679,7 +544,7 @@ This project builds on concepts from:
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 ### How to Contribute
 
@@ -703,13 +568,12 @@ This project builds on concepts from:
 
 ---
 
-## 📄 License
+##  License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 ### Technologies Used
 
@@ -725,25 +589,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Inspiration
 
-- Week 3 system failures inspired protective mechanisms
 - Academic research on regime detection
 - Quantitative finance best practices
 - Behavioral trading psychology
 
 ---
 
-## 📞 Contact
-
-**Project Supervisor:** [Supervisor Name]  
-**Student:** [Your Name]  
-**Email:** [Your Email]  
-**Institution:** [Your University]  
-**Course:** [Course Code/Name]  
-**Semester:** [Semester/Year]
 
 ---
 
-## 🎯 Project Objectives Achieved
+##  Project Objectives Achieved
 
 ✅ **Primary Goal**: Reduce risk while maintaining reasonable returns  
 ✅ **Architecture Goal**: Build multi-layer intelligent decision system  
@@ -753,7 +608,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📊 Quick Reference
+##  Quick Reference
 
 ### Key Commands
 
@@ -794,7 +649,7 @@ Week4_Analysis_Report.docx         # Full report
 
 **Last Updated:** January 2026  
 **Version:** 1.0.0  
-**Status:** ✅ Complete & Production Ready
+**Status:**  Complete & Production Ready
 
 ---
 
