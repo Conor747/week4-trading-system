@@ -212,7 +212,7 @@ engine.print_results(results)
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ### Five-Layer Decision Flow
 
