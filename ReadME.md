@@ -75,14 +75,14 @@ Week4_Project/
 ├── Core Trading System
 │   ├── market_regime.py                    # 7-regime detection system
 │   ├── improved_llm_strategy.py            # Original LLM strategy
-│   ├── improved_llm_strategy_adjustable.py # Multi-mode strategy (NEW)
+│   ├── improved_llm_strategy_adjustable.py # Multi-mode strategy 
 │   ├── week4_backtest_engine.py            # Complete backtest engine
-│   ├── portfolio.py                        # Portfolio management (Week 3)
-│   ├── risk_manager.py                     # Risk controls (Week 3)
-│   └── metrics.py                          # Performance metrics (Week 3)
+│   ├── portfolio.py                        # Portfolio management 
+│   ├── risk_manager.py                     # Risk controls 
+│   └── metrics.py                          # Performance metrics 
 │
 ├── Jupyter Notebooks
-│   ├── 04_week4_testing.ipynb              # Main analysis notebook
+│   └── 04_week4_testing.ipynb              # Main analysis notebook
 │   
 │
 ├── Dashboard
@@ -101,13 +101,10 @@ Week4_Project/
 │
 ├── Documentation
 │   ├── README.md                           # This file
-│   ├── Week4_Analysis_Report.docx          # Comprehensive report
-│   ├── presentation_script_20min.md        # Presentation guide
-│   ├── dashboard_demo_script.md            # Dashboard demo guide
-│   └── AI_Provider_Impact_Analysis.md      # AI provider comparison
+│   └──Week4_Analysis_Report.docx          # Comprehensive report
 │
 ├── Configuration
-    ├── .env                                # API keys (not in git)
+    └── .env                                # API keys (not in git)
                      
 
 ```
