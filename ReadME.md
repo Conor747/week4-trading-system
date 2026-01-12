@@ -201,7 +201,21 @@ results = engine.run(df, symbol='BTC/USDT')
 engine.print_results(results)
 ```
 
----
+**Required packages:**
+```
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+jupyter>=1.0.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+ccxt>=4.0.0
+streamlit>=1.28.0
+plotly>=5.17.0
+python-docx>=1.1.0
+openpyxl>=3.1.0
+```
 
 ##  System Architecture
 
