@@ -60,12 +60,6 @@ Built a trading system that **knows when NOT to trade**, blocking 89.4% of signa
 - Multi-strategy performance comparison
 - Regime analysis and signal distribution charts
 
-###  AI Provider Flexibility
-
-- Supports multiple LLM providers (DeepSeek, ChatGPT, Claude)
-- Cost-effective implementation with DeepSeek (95% performance at 5% cost)
-- Easy API provider switching
-
 ---
 
 ##  Project Structure
